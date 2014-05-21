@@ -74,11 +74,11 @@ class meArm():
 		time.sleep(0.05)
 		
 	def openGripper(self):
-		self.pwm.setPWM(self.gripper, 0, 150 + 450/2)
+		self.pwm.setPWM(self.gripper, 0, self.angle2pwm("gripper", pi/4.0))
 		time.sleep(0.3)
 		
 	def closeGripper(self):
-		self.pwm.setPWM(self.gripper, 0, 150 + 120*450/180)
+		self.pwm.setPWM(self.gripper, 0, self.angle2pwm("gripper", -pi/4.0))
 		time.sleep(0.3)
 	
 	def isReachable(self, x, y, z):
