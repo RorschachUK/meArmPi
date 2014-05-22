@@ -13,17 +13,17 @@ Wiring
 ------
 
 This uses an Adafruit 16-channel PWM servo driver board to connect the servos to the Raspberry Pi.  Use the first block of four servo connectors, and connect yellow wire to the top, brown wire to the bottom.
-Servo 0: meArm rotating base
-Servo 1: meArm shoulder (right hand side servo)
-Servo 2: meArm elbow (left hand side servo)
-Servo 3: meArm gripper
+* Servo 0: meArm rotating base
+* Servo 1: meArm shoulder (right hand side servo)
+* Servo 2: meArm elbow (left hand side servo)
+* Servo 3: meArm gripper
 
 Connect the Adafruit PWM Servo driver to the Pi as follows (I used Adafruit Pi Cobbler to help breadboard it):
-Adafruit GND to RPi GND
-Adafruit SCL to RPi SCL0
-Adafruit SDA to RPi SDA0
-Adafruit VCC to RPi 3.3V
-Adafruit V+ to RPi 5V
+* Adafruit GND to RPi GND
+* Adafruit SCL to RPi SCL0
+* Adafruit SDA to RPi SDA0
+* Adafruit VCC to RPi 3.3V
+* Adafruit V+ to RPi 5V
 
 Usage
 -----
