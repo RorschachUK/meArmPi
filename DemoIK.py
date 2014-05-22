@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  DemoIK.py - York Hack Space May 2014
+#  Simple demo of meArm library to walk through some points defined in Cartesian coordinates
 
 import meArm
 
