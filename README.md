@@ -32,16 +32,16 @@ Usage
 import meArm
 
 def main():
-	arm = meArm.meArm()
-	arm.begin()
+    arm = meArm.meArm()
+    arm.begin()
 	
-	while True:
-		arm.openGripper()
-		arm.closeGripper()
-		arm.openGripper()
-		arm.closeGripper()
-		arm.openGripper()
-	
+    while True:
+        arm.openGripper()
+        arm.closeGripper()
+        arm.openGripper()
+        arm.closeGripper()
+        arm.openGripper()
+        
         #Go up and left to grab something
         arm.gotoPoint(-80,100,140) 
         arm.closeGripper()
@@ -50,7 +50,7 @@ def main():
         arm.openGripper()
         #Back to start position
         arm.gotoPoint(0,100,50)
-	return 0
+    return 0
 
 if __name__ == '__main__':
 	main()
@@ -61,8 +61,8 @@ One usage examples is included:
 
 Installation
 ------------
-Clone this repository to your local machine
-run with sudo, i.e. 'sudo python DemoIK.py'
+* Clone this repository to your local machine
+* Run with sudo, i.e. 'sudo python DemoIK.py'
 
 Class methods of meArm object
 -----------------------------
@@ -72,6 +72,4 @@ Class methods of meArm object
 * gotoPoint(x, y, z) - move in a straight line from the current point to the requested position
 * goDirectlyTo(x, y, z) - set the servo angles to immediately go to the requested point without caring what path the arm swings through to get there - faster but less predictable than gotoPoint
 * isReachable() - returns true if the point can theoretically be reached by the arm
-* getX() - current x coordinate
-* getY() - current y coordinate
-* getZ() - current z coordinate
+* getPos() - current [x, y, z] coordinates
