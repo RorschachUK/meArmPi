@@ -25,7 +25,6 @@ def main():
         arm.gotoPoint(150, 150, 50)
         arm.gotoPoint(0, 150, 50)
         arm.gotoPoint(0, 100, 50)
-	return 0
 
 if __name__ == '__main__':
     main()
